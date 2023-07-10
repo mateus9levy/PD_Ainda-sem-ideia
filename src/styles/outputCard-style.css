@@ -1,0 +1,59 @@
+.result-container {
+    width: 90%;
+    background-color: #fff;
+    margin: 3rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .result-target-value {
+    color: #202020;
+  }
+  
+  .result-quantity-value {
+    color: #39393a;
+  }
+  
+  .result-input {
+    height: 5rem;
+    border: 0.1rem solid #339fa8;
+    border-radius: 0.5rem;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+  }
+  
+  .result-button-active,
+  .result-button-disable {
+    width: 100%;
+    height: 5rem;
+    border: 0;
+    cursor: pointer;
+    background: #339fa8;
+    border-radius: 0.5rem;
+    text-decoration: none;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: background-color 0.2s;
+  }
+  
+  .result-button-disable {
+    cursor: not-allowed;
+    background: #339fa8;
+  }
+  
+  .result-button-active:hover {
+    background-color: #339fa8;
+  }
+  
+  .result-button-title {
+    color: #fff;
+  }
+  

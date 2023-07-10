@@ -7,7 +7,6 @@ import officeLogo from '../../assets/logo-designer-services.png'
 const Home = () => {
   return (
     <div className="home-container">
-      <Header />
       <div className="home-content">
         <img className="home-image" src={officeLogo} alt="LogoShop" />
 

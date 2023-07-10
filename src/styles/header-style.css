@@ -21,8 +21,11 @@
     font-size: 2.6rem;
   }
   
-  .header-filter {
-    background-color: transparent;
+  .header-help {
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    color: #ffffff;
+    background-color: #339fa8;
     border: 0;
     cursor: pointer;
   }
