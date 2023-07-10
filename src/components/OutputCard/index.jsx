@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/outputCard-style.css';
-import { Link } from 'react-router-dom';
+import { knapsack } from '../../utils/scripts/knapsack';
+import data from '../../utils/data/products';
 
 const OutputCard = () => {
     const [price, setPrice] = useState('');
@@ -22,7 +23,12 @@ const OutputCard = () => {
             <button
                 className={price ? 'result-button-active' : 'result-button-disable'}
             onClick={()=>{
-
+               const output = knapsack(price,data);
+               let max = 0;
+               output.map((output)=>{
+                max += output.price; 
+               }) 
+               console.log(max)
             }}
             >
                 <h1 className="result-button-title">Calcular melhor compra</h1>
