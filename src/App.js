@@ -1,11 +1,18 @@
 import React from "react";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+
 
 
 function App() {
   return (
     <>
-    <Header/>
+      <Router>
+        <Routes>
+          <Route path="/" Component={Home} />
+        </Routes >
+
+      </Router>
     </>
   );
 }
