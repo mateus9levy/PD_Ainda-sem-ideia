@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/home-style.css';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
-import officeLogo from '../../images/logo-designer-services.png'
+import officeLogo from '../../assets/logo-designer-services.png'
 
 const Home = () => {
   return (

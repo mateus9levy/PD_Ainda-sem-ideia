@@ -159,13 +159,6 @@ const data = [
         image: 'etiquetas_adesivas.png',
     },
 
-    {
-        id: 24,
-        name: 'Apagador de quadro branco',
-        price: 5,
-        image: 'apagador_quadro_branco.png',
-    },
-
 ]
 
 export default data
