@@ -48,4 +48,5 @@ Clique em "Ver Produtos" para abrir uma página que lista os produtos disponíve
 
 ## Video 
 
+https://github.com/projeto-de-algoritmos/PD_Paper-Craft/assets/70410544/22e1112d-15ef-4ecf-b612-7151932841ee
 
