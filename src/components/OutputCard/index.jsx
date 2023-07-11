@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import '../../styles/outputCard-style.css';
 import { knapsack } from '../../utils/scripts/knapsack';
 import data from '../../utils/data/products';
+import { useOutputCardData } from '../../contexts/OutputCardContext';
 
 const OutputCard = () => {
+    const {setOutputCardData} = useOutputCardData()
     const [price, setPrice] = useState('');
 
     const handlePrice = (e) => {
@@ -23,12 +25,11 @@ const OutputCard = () => {
             <button
                 className={price ? 'result-button-active' : 'result-button-disable'}
             onClick={()=>{
-               const output = knapsack(price,data);
-               let max = 0;
-               output.map((output)=>{
-                max += output.price; 
-               }) 
-               console.log(max)
+                if(price){
+                    const output = knapsack(price,data);
+                    setOutputCardData({loaded:true, result: output})
+                }
+              
             }}
             >
                 <h1 className="result-button-title">Calcular melhor compra</h1>
